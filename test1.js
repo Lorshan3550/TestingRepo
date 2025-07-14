@@ -3,3 +3,8 @@ function isPalindrome(word) {
     const cleaned = word.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
     return cleaned === cleaned.split('').reverse().join('');
 }
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+console.log(greet('World'));
